@@ -58,10 +58,18 @@ export const StyledSubmitButton = styled.button`
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
-
+  
   &:hover {
-    background-color: #0056b3;
+    background-color: #007bff; 
   }
 
   animation: ${fadeIn} 0.5s ease;
+
+  
+  &:disabled {
+    pointer-events: none;
+    background-color: #ccc; 
+    cursor: not-allowed; 
+  }
 `;
+
