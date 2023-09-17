@@ -50,6 +50,8 @@ export const ContactForm = () => {
 
     dispatch(addContact({ ...values, id: nanoid() }));
 
+    resetForm();
+   
     
     dispatch(showNotification({
       id: nanoid(), 
