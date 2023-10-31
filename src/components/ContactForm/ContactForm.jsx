@@ -19,8 +19,8 @@ const initialValues = { name: '', number: '' };
 const ContactsValidation = Yup.object().shape({
   name: Yup.string().required('* Name is required'),
   number: Yup.string()
-    .min(6, 'Number must be at least 6 characters')
-    .max(10, 'Number must be at most 10 characters')
+    .min(13, 'Number must be at least 6 characters')
+    .max(13, 'Number must be at most 10 characters')
     .required('* Number is required'),
 });
 
